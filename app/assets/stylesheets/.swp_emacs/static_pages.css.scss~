@@ -1,0 +1,25 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 1.1em;
+    padding-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.apple {
+    background-color:#FFFFEF;
+}
+li {
+    float: left;
+    margin-left: 10px;
+}
+   
