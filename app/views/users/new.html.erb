@@ -1,0 +1,23 @@
+<% provide(:title, "Sign up") %>
+<div class="user_name">
+	<h1>Sign up</h1>
+</div>
+
+<div class="p_space">
+	<p>Welcome to The Pie-Hole Dialogues. We hope you enjoy our services.</p>
+</div>
+<div class="row">
+	<div class="span4 offset4">	
+		<%= form_for(@user) do |f| %>
+			<%= render 'shared/error_messages' %>
+			
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+	
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+	
+			<%= f.submit "Create my account", class: "btn btn-primary" %>
+		<% end %>
+	</div>
+</div>

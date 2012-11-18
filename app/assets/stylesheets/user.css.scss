@@ -1,0 +1,17 @@
+// Place all the styles related to the User controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+/* This helps display the user's name at the top - otherwise it gets obscured by the navbar */
+.user_name {
+	margin-top: 45px;
+}
+
+/* for editing the text areas */
+input, textarea, select, .uneditable-input {
+	height: auto !important;
+	margin-bottom: 10px;
+	width: 100%;
+}
+

@@ -1,9 +1,13 @@
 Phd::Application.routes.draw do
+  get "user/show"
+
+  resources :users
 
   root to: 'static_pages#home'
 
   match '/about',   to: 'static_pages#about' 
   match '/contact', to: 'static_pages#contact'
+  match '/signup',  to: 'users#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
