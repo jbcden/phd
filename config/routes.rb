@@ -2,12 +2,17 @@ Phd::Application.routes.draw do
   get "user/show"
 
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
-  root to: 'static_pages#home'
+  root to:  'sessions#new' #maybe change root to 'sessions#new' - login page
 
+  #match '/signin',	to: 'sessions#new'
+  match '/signout',	to: 'sessions#destroy', via: :delete	
   match '/about',   to: 'static_pages#about' 
   match '/contact', to: 'static_pages#contact'
   match '/signup',  to: 'users#new'
+  
+  match '/example', to: 'static_pages#home' #this is the first home page.
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

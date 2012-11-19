@@ -9,4 +9,10 @@ module ApplicationHelper
       "#{base} | #{page_title}"
     end
   end
+  
+  def signed_out # an attempt to remove the cookies of an expired session.
+		if self.current_user.nil?
+			cookies.delete(:remember_token)
+		end
+	end		
 end

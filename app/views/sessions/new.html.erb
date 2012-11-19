@@ -1,0 +1,29 @@
+<% provide(:title, "Sign in") %>
+<div class="apple">
+  <div class="seed">
+   <%= image_tag("pie.jpg") %>
+  </div>
+    <h1>The Pie-Hole Dialogues</h1>   
+    <div class="p_space">  
+    	<p>This site has been made to be a fun chat interface for friends and family
+    	to use without all of the "clutter" of sites like Facebook.
+    	</p>
+    </div> 
+ </div>
+ 
+<div class="row">
+	<div class="span4 offset4">
+		<%= form_for(:session, url: sessions_path) do |f| %>
+			
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+			
+			<%= f.label :password %>
+			<%= f.password_field :password %>
+			
+			<%= f.submit "Sign in", class: "btn btn-primary" %>
+		<% end %>
+		<p> New user? <%= link_to "Sign up here!", signup_path %> </p>
+	</div>
+</div>
+		 
