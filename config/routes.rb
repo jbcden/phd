@@ -1,6 +1,11 @@
 Phd::Application.routes.draw do
+  
+  resources :messages
+  resources :tasks
+
   get "user/show"
 
+  resources :tasks
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
 
@@ -11,8 +16,11 @@ Phd::Application.routes.draw do
   match '/about',   to: 'static_pages#about' 
   match '/contact', to: 'static_pages#contact'
   match '/signup',  to: 'users#new'
-  
+    
   match '/example', to: 'static_pages#home' #this is the first home page.
+  
+  #Routes for tasks
+  match '/tasks',	to: 'tasks#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

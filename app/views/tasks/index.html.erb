@@ -1,0 +1,13 @@
+<h1 id="intro">Task Checklist</h1>
+
+<%= link_to 'New Task', new_task_path, id: "new_link", remote: true %>
+
+<h2 id="incomp">Incomplete Tasks</h2>
+<div class="tasks" id="incomplete">
+	<%= render @incomplete_tasks %>
+</div>	
+
+<h2>Complete Tasks</h2>
+<div class="tasks" id="complete">
+	<%= render @complete_tasks %>
+</div>

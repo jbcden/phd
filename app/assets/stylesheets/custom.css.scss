@@ -20,3 +20,20 @@
 .alert {
 	margin-top: 50px;
 }
+
+.container {
+	padding: 0 20px;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+form .field, form .actions {
+  margin: 12px 0;
+}

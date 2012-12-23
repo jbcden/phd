@@ -1,5 +1,6 @@
 module SessionsHelper
 
+	#TODO fix cookie expiration.
 	def sign_in(user)
 		cookies[:remember_token] = { value: user.remember_token,
 								    expires: 1.minutes.from_now }

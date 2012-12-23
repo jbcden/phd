@@ -1,0 +1,38 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#temp_header {
+	margin-top: 50px;
+}
+/* This formats the chat wondow itself */
+#chat {
+	/*margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;*/
+	margin: 30px auto 20px auto; //top, right, bottom, left
+	overflow:scroll; 
+	height: 398px;
+	width: 500px;
+	border:solid 1px #777;
+	background-color:#F3F3E3;
+}
+/* This is the actual message text format.*/
+.chat_text {
+	list-style-type:none;
+	padding-left: 7px;
+	padding-top: 5px;
+}
+
+/* This is to create a little bit of space between the time and the text. */
+#text_span {
+	margin-right: 10px;
+	float:right;
+} 
+
+/* Message bar width */
+#message_content {
+	width:450px;
+	border: solid 1px #BBB;
+}
